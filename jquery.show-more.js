@@ -1,6 +1,7 @@
 /*!
  * Show More
- * Sean Gravener
+ * (c) 2013 Sean Gravener
+ * http://twitter.com/seangravener
  * 
  * Usage:
 
@@ -18,13 +19,23 @@
       // globals
       $html = {},
       
-      // set defaults
       defaults = {
+        
+        // the limit per update
         limit: 3,
+        
+        // use offset to ignore header row?
         offset: 0,
+
+        // the selector to indicate a row
         rowTag: 'tr',
-        complete: function() {},
-        smSelector: '.sm--show-more'
+
+        // clicked to shore more
+        smSelector: '.sm--show-more',
+
+        // do something when update is complete
+        complete: function() {}
+
       },
      
       // merge custom options/settings with defaults
